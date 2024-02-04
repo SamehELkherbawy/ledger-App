@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+            <div class="title">
+                <a href="index.html" class="name" >Monthly ledger System</a>
+                <nav>
+                    <ul id="link">
+                        <li>
+                            <a href="Login.html">Sign In</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Sign Up</a>
+                        </li>
+                    </ul>
+                    <ul id="info">
+                        <li id="logout">
+                            <a>Sign Out</a>
+                        </li>
+                        <li id="user">
+                            
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="curd">
+
+        <div class="heads">
+            <h1>Sameh Ledger</h1>
+            <p>Monthly ledger System</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Title" onclick="getTotal()">
+            <div class="price">
+                <input type="number" id="price" placeholder="Price" onclick="getTotal()">
+                <input type="text" id="taxes" placeholder="Taxes"onclick="getTotal()">
+                <input type="number" id="ads" placeholder="Ads"onclick="getTotal()">
+                <input type="text" id="discount" placeholder="Discount"onclick="getTotal()">
+                <small id="total"></small>
+            </div>
+                <input type="text" id="count" placeholder="count"onclick="getTotal()">
+                <input type="text" id="category" placeholder="category" onclick="getTotal()">
+                <small id="gtotal"></small>
+                <button id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <input type="text" id="search" placeholder="Search" onkeyup="searchData(this.value)">
+            <div class="btnsearch">
+                <button id="searchByTitle"onclick="getSearchMood(this.id)">Search by Title</button>
+                <button id="searchByCategory"onclick="getSearchMood(this.id)">Search by Category</button>
+            </div>
+        </div>
+        <div class="deleteall">
+            
+        </div>
+        <table>
+            <tr>
+                <div class="head1">
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Vat</th>
+                <th>Ads</th>
+                <th>Discount</th>
+                <th>Count</th>
+                <th>Category</th>
+                <th>Total</th>
+                <th>Grand Total</th>
+                <th>Update</th>
+                <th>Delete</th>
+                </div>
+            </tr>
+            <tbody id="content">
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="loader" id="loader">
+         </div>
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>

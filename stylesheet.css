@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: lightslategrey;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.curd{
+    width: 80%;
+    margin: auto;
+}
+.curd .heads{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.inputs input{
+    width: 20%;
+}
+.inputs .price{
+    width: 115%;
+}
+.inputs #title{
+    width: 100%;
+}
+#total{
+    background-color: red;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+#total::before{
+    content: "Total: ";
+}
+.inputs #count{
+    width: 49.5%;
+
+}
+.inputs #category{
+    width: 50%;
+    margin: auto;
+}
+input:focus{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+#submit{
+    width: 100%;
+    background-color: greenyellow;
+        
+}
+.btnsearch{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.curd button{
+    width: 80%;
+    padding: 5px;
+    border: none;
+    background-color: aqua;
+    color: black;
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.deleteall{
+    margin: 10px 0px;
+    text-align: center;
+}
+table{
+    width: 99%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 5px;
+    border: 5px solid white;
+}
+
+table th{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+table td{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+/*signup*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+header{
+    background-color: black;
+    padding: 10px 0 ;
+    color: white; 
+}
+.container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.title{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.name{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+ul{
+    display: flex;
+    gap: 15px;
+}
+ul li a{
+    color: white;
+}
+.lform{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    background-color: darkslategray;
+    text-align: center;
+    width: 40%;
+    padding: 20px
+}
+h1{
+    color: white;
+}
+.lform form{
+    padding: 10px;
+}
+.lform input{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+}
+.lform button{
+    width: 35%;
+    padding: 10px;
+    cursor: pointer;
+}
+#info{
+    display: none;
+    
+}
+#info #logout{
+    cursor: pointer;
+}
+.titr{
+    text-align: center;
+    background-color: aqua;
+}
+
+/*loading page */
+
+.loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    z-index: 1;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /*
+.loader {
+    border: none;
+    outline: none;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    display: none;
+    
+}
+*/
